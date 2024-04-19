@@ -36,7 +36,6 @@
   .bottom {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 
     button {
@@ -46,10 +45,7 @@
       cursor: pointer;
       background-color: #fece51;
 
-      img {
-        width: 24px;
-        height: 24px;
-      }
+      img {}
     }
   }
 }
