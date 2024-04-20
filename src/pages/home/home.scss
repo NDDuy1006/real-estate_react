@@ -15,14 +15,6 @@
       gap: 50px;
       height: 100%;
 
-      @include md {
-        padding: 0;
-      }
-
-      @include sm {
-        justify-content: flex-start;
-      }
-
       .title {
         font-size: 64px;
 
@@ -53,6 +45,14 @@
         }
       }
     }
+
+    @include md {
+      padding: 0;
+    }
+
+    @include sm {
+      justify-content: flex-start;
+    }
   }
 
   .img-container {
@@ -62,10 +62,6 @@
     display: flex;
     align-items: center;
 
-    @include md {
-      display: none;
-    }
-
     img {
       width: 115%;
       position: absolute;
@@ -74,6 +70,10 @@
       @include lg {
         width: 105%;
       }
+    }
+
+    @include md {
+      display: none;
     }
   }
 }

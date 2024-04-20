@@ -28,6 +28,7 @@ nav {
       font-weight: bold;
       font-size: 20px;
       display: flex;
+      align-items: center;
       gap: 10px;
 
       img {
@@ -54,10 +55,6 @@ nav {
     justify-content: flex-end;
     background-color: #fcf5f3;
     height: 100%;
-
-    @include md {
-      background-color: transparent;
-    }
 
     a {
       padding: 12px 24px;
@@ -107,6 +104,10 @@ nav {
           display: initial;
         }
       }
+    }
+
+    @include md {
+      background-color: transparent;
     }
   }
 }

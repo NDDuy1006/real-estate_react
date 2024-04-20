@@ -4,9 +4,23 @@
 
   .list-container {
     flex: 3;
+    height: 100%;
 
     .wrapper {
+      height: calc(100% - 211px);
       padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      overflow-y: scroll;
+      margin-top: 10px;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 20px;
+        width: 100%;
+      }
     }
   }
 

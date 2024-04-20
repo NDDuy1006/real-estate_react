@@ -9,8 +9,8 @@ function ListPage() {
   return (
     <div className="list-page">
       <div className="list-container">
+        <Filter />
         <div className="wrapper">
-          <Filter />
           {data.map(item => (
             <Card key={item.id} data={item} />
           ))}
