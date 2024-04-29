@@ -14,7 +14,7 @@ nav {
     }
 
     &:hover {
-      color: #fece51;
+      color: #c98f2b;
     }
   }
 
@@ -24,12 +24,16 @@ nav {
     align-items: center;
     gap: 50px;
 
+    a {
+      padding: 5px 8px;
+    }
+
     .logo {
       font-weight: bold;
       font-size: 20px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
 
       img {
         width: 28px;
@@ -63,6 +67,10 @@ nav {
 
     .register {
       background-color: #fece51;
+
+      &:hover {
+        color: white;
+      }
     }
 
     .menu-icon {
