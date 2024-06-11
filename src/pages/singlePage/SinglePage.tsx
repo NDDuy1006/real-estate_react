@@ -37,7 +37,14 @@ function SinglePage () {
       </div>
       <div className="features">
         <div className="wrapper">
-
+          <p className="title">General</p>
+          <div className="list-vertical"></div>
+          <p className="title">Sizes</p>
+          <div className="sizes"></div>
+          <p className="title">Nearby Places</p>
+          <div className="list-horizontal"></div>
+          <p className="title">Location</p>
+          <div className="map-container"></div>
         </div>
       </div>
     </div>

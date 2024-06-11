@@ -9,26 +9,26 @@ function Gallery({ images }: IProps) {
   const [imageIndex, setImageIndex] = useState<number | null>(null)
   
   const changeSlide = (direction: string) => {
-    if (direction === "backward") {
-      if (imageIndex === 0) {
-        console.log(imageIndex);
-        
-        setImageIndex(images.length - 1)
+    if (imageIndex !== null) {
+      if (direction === "backward") {
+        if (imageIndex === 0) {
+          setImageIndex(images.length - 1);
+        } else {
+          setImageIndex(imageIndex && imageIndex - 1);
+        }
       } else {
-        setImageIndex(imageIndex && imageIndex - 1)
+        if (imageIndex === images.length - 1) {
+          console.log("Image Index --- +++", imageIndex);
+          
+          setImageIndex(0);
+        } else {
+          setImageIndex(imageIndex + 1);
+          // setImageIndex(imageIndex && imageIndex + 1)
+          // this does not work because imageIndex === 0 has the falsy value, the "imageIndex + 1" never runs
+        }
       }
-    } else {
-      if (imageIndex === images.length - 1) {
-        console.log(direction);
-        setImageIndex(0)
-      } else {
-        console.log(direction);
-        setImageIndex(imageIndex && imageIndex + 1)
-        console.log(imageIndex);
-      }
-      
     }
-  }
+  };
 
   return (
     <div className="gallery">
