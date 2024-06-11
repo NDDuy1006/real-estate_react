@@ -20,8 +20,8 @@ interface IProps {
     id: number;
     title: string;
     img: string;
-    bedroom: number;
-    bathroom: number;
+    bedrooms: number;
+    bathrooms: number;
     price: number;
     address: string;
     latitude: number;

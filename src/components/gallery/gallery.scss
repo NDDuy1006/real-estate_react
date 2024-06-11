@@ -1,3 +1,5 @@
+@import "../../responsive.scss";
+
 .gallery {
   width: 100%;
   height: 350px;
@@ -24,9 +26,18 @@
       img {
         width: 50px;
 
+        @include md {
+          width: 30px;
+        }
+
+        @include sm {
+          width: 18px;
+        }
+
         &.right {
           transform: rotate(180deg);
         }
+
       }
     }
 

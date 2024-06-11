@@ -6,8 +6,8 @@ interface IProps {
     id: number;
     title: string;
     img: string;
-    bedroom: number;
-    bathroom: number;
+    bedrooms: number;
+    bathrooms: number;
     price: number;
     address: string;
     latitude: number;
@@ -36,11 +36,11 @@ function Card({
           <div className="features">
             <div className="feature-item">
               <img src="/bed.png" alt="bed" />
-              <span>{data.bedroom} bedrooms</span>
+              <span>{data.bedrooms} bedrooms</span>
             </div>
             <div className="feature-item">
               <img src="/bath.png" alt="bed" />
-              <span>{data.bathroom} bathrooms</span>
+              <span>{data.bathrooms} bathrooms</span>
             </div>
           </div>
           <div className="icons">

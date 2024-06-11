@@ -7,8 +7,8 @@ interface IProps {
     id: number;
     title: string;
     img: string;
-    bedroom: number;
-    bathroom: number;
+    bedrooms: number;
+    bathrooms: number;
     price: number;
     address: string;
     latitude: number;
@@ -24,7 +24,7 @@ function Pin({data}: IProps) {
           <img src={data.img} alt="" />
           <div className="text-container">
             <Link to={`/${data.id}`}>{data.title}</Link>
-            <span>{data.bedroom} bedrooms</span>
+            <span>{data.bedrooms} bedrooms</span>
             <b>$ {data.price}</b>
           </div>
         </div>
