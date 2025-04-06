@@ -15,6 +15,7 @@ nav {
 
     &:hover {
       color: #c98f2b;
+      scale: 1.05;
     }
   }
 
@@ -34,6 +35,11 @@ nav {
       display: flex;
       align-items: center;
       gap: 6px;
+
+      &:hover {
+        color: #000;
+        scale: 1.05;
+      }
 
       img {
         width: 28px;
@@ -76,6 +82,38 @@ nav {
         border-radius: 50%;
         object-fit: cover;
         margin-right: 20px;
+      }
+
+      span {
+        @include sm {
+          display: none;
+        }
+      }
+
+      .profile {
+        padding: 12px 24px;
+        background-color: #fece51;
+        cursor: pointer;
+        border: none;
+        position: relative;
+
+        &:hover {
+          color: #000;
+        }
+
+        .notification {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background-color: red;
+          color: white;
+          border-radius: 50%;
+          width: 26px;
+          height: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
 

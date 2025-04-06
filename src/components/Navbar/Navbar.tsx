@@ -7,7 +7,7 @@ type Props = {}
 const Navbar = (props: Props) => {
   const [open, setOpen] = useState(false)
 
-  const user = false
+  const user = true
 
   return (
     <nav>
@@ -26,8 +26,9 @@ const Navbar = (props: Props) => {
           <div className="user">
             <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="avatar" />
             <span>John Doe</span>
-            <Link to="/profile" >
-              Profile
+            <Link to="/profile" className="profile">
+              <div className="notification">3</div>
+              <span>Profile</span>
             </Link>
           </div>
         ) : (

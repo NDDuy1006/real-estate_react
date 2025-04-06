@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import ListPage from "./pages/listPagge/ListPage"
+import ListPage from "./pages/listPage/ListPage"
 import Layout from "./pages/layout/Layout"
 import SinglePage from "./pages/singlePage/SinglePage"
 import LoginPage from "./pages/loginPage/LoginPage"
