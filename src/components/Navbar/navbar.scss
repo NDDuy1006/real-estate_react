@@ -4,7 +4,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 84px;
 
   a {
     transition: all 0.4s ease;
@@ -65,6 +65,20 @@ nav {
       margin: 20px;
     }
 
+    .user {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+    }
+
     .register {
       background-color: #fece51;
 
@@ -75,7 +89,7 @@ nav {
 
     .menu-icon {
       display: none;
-      z-index: 999;
+      z-index: 1002;
 
       img {
         width: 36px;
@@ -89,7 +103,7 @@ nav {
     }
 
     .mobile-menu {
-      position: absolute;
+      position: fixed;
       top: 0;
       right: -50%;
       background-color: black;
@@ -102,6 +116,7 @@ nav {
       justify-content: center;
       align-items: center;
       font-size: 24px;
+      z-index: 1001;
 
       &.active {
         right: 0

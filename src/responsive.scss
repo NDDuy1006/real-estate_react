@@ -1,15 +1,18 @@
+// Mobile - smaller than 738px
 @mixin sm {
   @media(max-width: 738px) {
     @content;
   }
 }
 
+// Laptops/Tablets - smaller than 1024px
 @mixin md {
   @media(max-width: 1024px) {
     @content;
   }
 }
 
+// Desktop - smaller than 1366px
 @mixin lg {
   @media(max-width: 1366px) {
     @content;

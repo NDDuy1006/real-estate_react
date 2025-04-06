@@ -1,4 +1,4 @@
-import Gallery from "../../components/gallery/Gallery"
+import Gallery from "../../components/Gallery/Gallery"
 import "./singlePage.scss"
 import { singlePostData, userData } from "../../lib/dummyData"
 import Map from "../../components/Map/Map"

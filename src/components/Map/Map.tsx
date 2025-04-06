@@ -43,7 +43,7 @@ function Map ({ items, center }: IProps) {
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {items.map(item => (
-        <Pin data={item} />
+        <Pin data={item} key={item.id}/>
       ))}
   </MapContainer>
   )
